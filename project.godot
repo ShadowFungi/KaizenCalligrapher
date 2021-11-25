@@ -1,0 +1,47 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "Node",
+"class": "Document",
+"language": "GDScript",
+"path": "res://Classes/Document.gd"
+} ]
+_global_script_class_icons={
+"Document": ""
+}
+
+[application]
+
+config/name="KaizenCalligrapher"
+config/use_custom_user_dir=true
+config/custom_user_dir_name="KaizenCalligrapher"
+config/icon="res://icon.png"
+
+[autoload]
+
+Global="*res://Autoload/Global.gd"
+
+[display]
+
+window/size/width=640
+window/size/height=360
+window/dpi/allow_hidpi=true
+
+[physics]
+
+common/enable_pause_aware_picking=true
+
+[rendering]
+
+quality/driver/driver_name="GLES2"
+vram_compression/import_etc=true
+vram_compression/import_etc2=false
+environment/default_environment="res://default_env.tres"
